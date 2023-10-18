@@ -1,0 +1,28 @@
+.clipman-popupsearchmenuitem {
+    border-radius: 18px;
+    padding: 7px 12px;
+}
+
+.clipman-searchmenuitem {
+    padding: 9px 12px;
+}
+
+.clipman-placeholderpanel {
+    spacing: 4px;
+}
+
+.clipman-toolbuttonnpanel {
+    spacing: 10px;
+}
+
+.clipman-toolbutton {
+    padding: 2px;
+}
+
+.clipman-colorpreview {
+    icon-size: 16px;
+}
+
+.clipman-toolbutton .system-status-icon {
+    icon-size: 16px;
+}

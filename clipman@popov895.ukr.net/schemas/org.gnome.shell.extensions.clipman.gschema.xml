@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <enum id="org.gnome.shell.extensions.clipman.MenuMaxSize">
+        <value nick="small" value="0"/>
+        <value nick="medium" value="1"/>
+        <value nick="large" value="2"/>
+    </enum>
+    <schema id="org.gnome.shell.extensions.clipman" path="/org/gnome/shell/extensions/clipman/">
+        <key name="history-size" type="i">
+            <default>15</default>
+            <range min="1" max="500"/>
+        </key>
+        <key name="show-surrounding-whitespace" type="b">
+            <default>true</default>
+        </key>
+        <key name="show-color-preview" type="b">
+            <default>true</default>
+        </key>
+        <key name="menu-max-size" enum="org.gnome.shell.extensions.clipman.MenuMaxSize">
+            <default>"medium"</default>
+        </key>
+        <key name="web-search-engine" type="s">
+            <choices>
+                <choice value="duckduckgo"/>
+                <choice value="brave"/>
+                <choice value="google"/>
+                <choice value="bing"/>
+                <choice value="baidu"/>
+                <choice value="yahoo"/>
+                <choice value="ecosia"/>
+                <choice value="ask"/>
+                <choice value="aol"/>
+                <choice value="naver"/>
+                <choice value="custom"/>
+            </choices>
+            <default>"duckduckgo"</default>
+        </key>
+        <key name="custom-web-search-url" type="s">
+            <default>""</default>
+        </key>
+        <key name="expiry-days" type="i">
+            <default>7</default>
+            <range min="1" max="365"/>
+        </key>
+        <key name="toggle-menu-shortcut" type="as">
+            <default><![CDATA[['<Super>Z']]]></default>
+        </key>
+        <key name="toggle-private-mode-shortcut" type="as">
+            <default><![CDATA[['']]]></default>
+        </key>
+        <key name="clear-history-shortcut" type="as">
+            <default><![CDATA[['']]]></default>
+        </key>
+    </schema>
+</schemalist>
